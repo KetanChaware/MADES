@@ -5,11 +5,47 @@
  */
 
 package UI;
+import java.sql.*;
 import javax.swing.JOptionPane;
 /**
  *
  * @author KETAN1
  */
+
+
+class DBconnect{
+    
+    public Statement getStmt(){
+        
+        Connection con = null;
+        Statement st = null;
+        
+        try{
+             Class.forName("com.mysql.jdbc.Driver");
+             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/try", "root", "KetChaw1!");
+             st = con.createStatement();
+             
+         }catch(Exception e){
+             System.out.println(e);
+         }
+        
+        return st;
+    }
+    
+    public ResultSet getRS(Statement stmt, String query){
+        ResultSet rs = null;
+        
+        try{
+            rs = stmt.executeQuery(query);
+            
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        
+        return rs;
+    }
+}
+
 public class Home_Page extends javax.swing.JFrame {
 
     /**
@@ -172,7 +208,7 @@ public class Home_Page extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) {     
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
