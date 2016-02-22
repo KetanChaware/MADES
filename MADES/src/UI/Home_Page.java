@@ -31,7 +31,7 @@ class DBconnect{
         
         return st;
     }
-    
+//to use this make a dbconnect object, get a stmt and pass a query.    
     public ResultSet getRS(Statement stmt, String query){
         ResultSet rs = null;
         
@@ -86,10 +86,11 @@ public class Home_Page extends javax.swing.JFrame {
         jLabel2.setText("MEDICAL DIAGNOSIS EXPERT SYSTEM");
 
         jButton1.setBackground(new java.awt.Color(255, 153, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 153, 51));
+        jButton1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 60)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(204, 0, 0));
         jButton1.setText("START");
-        jButton1.setBorder(null);
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +102,11 @@ public class Home_Page extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(0, 153, 51));
         jButton2.setText("How to Use");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 51, 51));
@@ -204,6 +210,13 @@ public class Home_Page extends javax.swing.JFrame {
         Developers dp = new Developers();
         dp.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+        How_to_Use htu = new How_to_Use();
+        htu.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
