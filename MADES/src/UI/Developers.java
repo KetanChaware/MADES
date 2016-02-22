@@ -6,8 +6,6 @@
 
 package UI;
 
-import java.sql.*;
-
 /**
  *
  * @author KETAN1
