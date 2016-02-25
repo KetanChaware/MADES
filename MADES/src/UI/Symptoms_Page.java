@@ -5,7 +5,9 @@
  */
 
 package UI;
-
+import java.awt.Color;
+import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
 /**
  *
  * @author KETAN1
@@ -35,6 +37,48 @@ public class Symptoms_Page extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox();
+        jComboBox2 = new javax.swing.JComboBox();
+        jComboBox3 = new javax.swing.JComboBox();
+        jComboBox4 = new javax.swing.JComboBox();
+        jComboBox5 = new javax.swing.JComboBox();
+        jTextField1 = new javax.swing.JTextField();
+        jSlider1 = new javax.swing.JSlider();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jSlider2 = new javax.swing.JSlider();
+        jSlider3 = new javax.swing.JSlider();
+        jSlider4 = new javax.swing.JSlider();
+        jSlider5 = new javax.swing.JSlider();
+        jTextField6 = new javax.swing.JTextField();
+        jSlider6 = new javax.swing.JSlider();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jCheckBox6 = new javax.swing.JCheckBox();
+        jSlider7 = new javax.swing.JSlider();
+        jCheckBox7 = new javax.swing.JCheckBox();
+        jSlider8 = new javax.swing.JSlider();
+        jCheckBox8 = new javax.swing.JCheckBox();
+        jSlider9 = new javax.swing.JSlider();
+        jCheckBox9 = new javax.swing.JCheckBox();
+        jSlider10 = new javax.swing.JSlider();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -48,6 +92,288 @@ public class Symptoms_Page extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Symptoms - Type 2 :");
 
+        jCheckBox1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox1StateChanged(evt);
+            }
+        });
+
+        jCheckBox2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox2StateChanged(evt);
+            }
+        });
+
+        jCheckBox3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox3StateChanged(evt);
+            }
+        });
+
+        jCheckBox4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox4StateChanged(evt);
+            }
+        });
+
+        jCheckBox5.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox5StateChanged(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setText("USE");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setText("BODY PART");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setText("DESCRIPTION");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setText("INTENSITY");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "None", "Head", "Stomach", "Chest", "Legs", "Arms", "Back" }));
+        jComboBox1.setToolTipText("");
+        jComboBox1.setEnabled(false);
+        jComboBox1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jComboBox1FocusGained(evt);
+            }
+        });
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "None", "Head", "Stomach", "Chest", "Legs", "Arms", "Back" }));
+        jComboBox2.setEnabled(false);
+        jComboBox2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jComboBox2FocusGained(evt);
+            }
+        });
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "None", "Head", "Stomach", "Chest", "Legs", "Arms", "Back" }));
+        jComboBox3.setEnabled(false);
+        jComboBox3.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jComboBox3FocusGained(evt);
+            }
+        });
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "None", "Head", "Stomach", "Chest", "Legs", "Arms", "Back" }));
+        jComboBox4.setEnabled(false);
+        jComboBox4.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jComboBox4FocusGained(evt);
+            }
+        });
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "None", "Head", "Stomach", "Chest", "Legs", "Arms", "Back" }));
+        jComboBox5.setEnabled(false);
+        jComboBox5.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jComboBox5FocusGained(evt);
+            }
+        });
+
+        jTextField1.setEditable(false);
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField1FocusGained(evt);
+            }
+        });
+
+        jSlider1.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider1.setMajorTickSpacing(1);
+        jSlider1.setMaximum(10);
+        jSlider1.setMinimum(1);
+        jSlider1.setPaintLabels(true);
+        jSlider1.setValue(1);
+        jSlider1.setEnabled(false);
+
+        jTextField2.setEditable(false);
+        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField2FocusGained(evt);
+            }
+        });
+
+        jTextField3.setEditable(false);
+        jTextField3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField3FocusGained(evt);
+            }
+        });
+
+        jTextField4.setEditable(false);
+        jTextField4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField4FocusGained(evt);
+            }
+        });
+
+        jTextField5.setEditable(false);
+        jTextField5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField5FocusGained(evt);
+            }
+        });
+
+        jSlider2.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider2.setMajorTickSpacing(1);
+        jSlider2.setMaximum(10);
+        jSlider2.setMinimum(1);
+        jSlider2.setPaintLabels(true);
+        jSlider2.setValue(1);
+        jSlider2.setEnabled(false);
+
+        jSlider3.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider3.setMajorTickSpacing(1);
+        jSlider3.setMaximum(10);
+        jSlider3.setMinimum(1);
+        jSlider3.setPaintLabels(true);
+        jSlider3.setValue(1);
+        jSlider3.setEnabled(false);
+
+        jSlider4.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider4.setMajorTickSpacing(1);
+        jSlider4.setMaximum(10);
+        jSlider4.setMinimum(1);
+        jSlider4.setPaintLabels(true);
+        jSlider4.setValue(1);
+        jSlider4.setEnabled(false);
+
+        jSlider5.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider5.setMajorTickSpacing(1);
+        jSlider5.setMaximum(10);
+        jSlider5.setMinimum(1);
+        jSlider5.setPaintLabels(true);
+        jSlider5.setValue(1);
+        jSlider5.setEnabled(false);
+
+        jTextField6.setEditable(false);
+        jTextField6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField6.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField6FocusGained(evt);
+            }
+        });
+
+        jSlider6.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider6.setMajorTickSpacing(1);
+        jSlider6.setMaximum(10);
+        jSlider6.setMinimum(1);
+        jSlider6.setPaintLabels(true);
+        jSlider6.setValue(1);
+        jSlider6.setEnabled(false);
+
+        jTextField7.setEditable(false);
+        jTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField7FocusGained(evt);
+            }
+        });
+
+        jTextField8.setEditable(false);
+        jTextField8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField8FocusGained(evt);
+            }
+        });
+
+        jTextField9.setEditable(false);
+        jTextField9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField9.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField9FocusGained(evt);
+            }
+        });
+
+        jTextField10.setEditable(false);
+        jTextField10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextField10.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField10FocusGained(evt);
+            }
+        });
+
+        jCheckBox6.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox6StateChanged(evt);
+            }
+        });
+
+        jSlider7.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider7.setMajorTickSpacing(1);
+        jSlider7.setMaximum(10);
+        jSlider7.setMinimum(1);
+        jSlider7.setPaintLabels(true);
+        jSlider7.setValue(1);
+        jSlider7.setEnabled(false);
+
+        jCheckBox7.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox7StateChanged(evt);
+            }
+        });
+
+        jSlider8.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider8.setMajorTickSpacing(1);
+        jSlider8.setMaximum(10);
+        jSlider8.setMinimum(1);
+        jSlider8.setPaintLabels(true);
+        jSlider8.setValue(1);
+        jSlider8.setEnabled(false);
+
+        jCheckBox8.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox8StateChanged(evt);
+            }
+        });
+
+        jSlider9.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider9.setMajorTickSpacing(1);
+        jSlider9.setMaximum(10);
+        jSlider9.setMinimum(1);
+        jSlider9.setPaintLabels(true);
+        jSlider9.setValue(1);
+        jSlider9.setEnabled(false);
+
+        jCheckBox9.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox9StateChanged(evt);
+            }
+        });
+
+        jSlider10.setForeground(new java.awt.Color(255, 51, 102));
+        jSlider10.setMajorTickSpacing(1);
+        jSlider10.setMaximum(10);
+        jSlider10.setMinimum(1);
+        jSlider10.setPaintLabels(true);
+        jSlider10.setValue(1);
+        jSlider10.setEnabled(false);
+
+        jCheckBox10.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jCheckBox10StateChanged(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setText("USE");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setText("DESCRIPTION");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel11.setText("INTENSITY");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -59,8 +385,80 @@ public class Symptoms_Page extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addContainerGap(833, Short.MAX_VALUE))
+                    .addComponent(jLabel3)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jCheckBox4)
+                            .addComponent(jCheckBox5)
+                            .addComponent(jCheckBox1)
+                            .addComponent(jCheckBox2)
+                            .addComponent(jCheckBox3))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(89, 89, 89)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jComboBox1, 0, 164, Short.MAX_VALUE))
+                                .addGap(59, 59, 59)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jTextField4)
+                                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSlider1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jSlider2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jSlider3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jSlider4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jSlider5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(133, 133, 133)
+                                .addComponent(jLabel5)
+                                .addGap(208, 208, 208)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 213, Short.MAX_VALUE)
+                                .addComponent(jLabel7)
+                                .addGap(59, 59, 59)))))
+                .addGap(46, 46, 46))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox6)
+                            .addComponent(jCheckBox7)
+                            .addComponent(jCheckBox8)
+                            .addComponent(jCheckBox9)
+                            .addComponent(jCheckBox10))
+                        .addGap(112, 112, 112)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 365, Short.MAX_VALUE)
+                            .addComponent(jTextField7)
+                            .addComponent(jTextField8)
+                            .addComponent(jTextField9)
+                            .addComponent(jTextField10))
+                        .addGap(84, 84, 84)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSlider7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSlider8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSlider9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSlider10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(264, 264, 264)
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel11)
+                        .addGap(164, 164, 164))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -69,13 +467,116 @@ public class Symptoms_Page extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 422, Short.MAX_VALUE)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(312, 312, 312))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addGap(36, 36, 36)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCheckBox1))
+                        .addGap(43, 43, 43)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jCheckBox2)))
+                        .addGap(42, 42, 42)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jCheckBox3)))
+                        .addGap(46, 46, 46)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jCheckBox4))))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(44, 44, 44)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSlider5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCheckBox5))
+                        .addGap(41, 41, 41)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11))
+                .addGap(35, 35, 35)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jCheckBox6)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jSlider6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(44, 44, 44))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jTextField6)
+                                .addGap(63, 63, 63)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox7)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jSlider7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jTextField7)
+                                        .addGap(20, 20, 20)))))
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox8)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jSlider8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jTextField8)
+                                        .addGap(20, 20, 20)))))
+                        .addGap(45, 45, 45)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox9)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jSlider9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jTextField9)
+                                        .addGap(20, 20, 20)))))
+                        .addGap(39, 39, 39)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jSlider10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCheckBox10))
+                                .addGap(20, 20, 20)))
+                        .addGap(20, 20, 20))))
         );
 
         jScrollPane2.setViewportView(jPanel2);
@@ -96,6 +597,11 @@ public class Symptoms_Page extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 0, 255));
         jButton2.setText("Reset");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 153, 51));
@@ -154,11 +660,394 @@ public class Symptoms_Page extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        dispose();
         
-        Diagnosis_Page dp = new Diagnosis_Page();
-        dp.setVisible(true);
+        int count = 0;
+        
+        if(jCheckBox1.isSelected()){
+            if(jComboBox1.getSelectedItem() == "None"){
+                jComboBox1.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Body part can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+            if(jTextField1.getText().equals("")){
+                jTextField1.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox2.isSelected()){
+            if(jComboBox2.getSelectedItem() == "None"){
+                jComboBox2.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Body part can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+            if(jTextField2.getText().equals("")){
+                jTextField2.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox3.isSelected()){
+            if(jComboBox3.getSelectedItem() == "None"){
+                jComboBox3.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Body part can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+            if(jTextField3.getText().equals("")){
+                jTextField3.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox4.isSelected()){
+            if(jComboBox4.getSelectedItem() == "None"){
+                jComboBox4.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Body part can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+            if(jTextField4.getText().equals("")){
+                jTextField4.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox5.isSelected()){
+            if(jComboBox5.getSelectedItem() == "None"){
+                jComboBox5.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Body part can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+            if(jTextField5.getText().equals("")){
+                jTextField5.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox6.isSelected()){
+            if(jTextField6.getText().equals("")){
+                jTextField6.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox7.isSelected()){
+            if(jTextField7.getText().equals("")){
+                jTextField7.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox8.isSelected()){
+            if(jTextField8.getText().equals("")){
+                jTextField8.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox9.isSelected()){
+            if(jTextField9.getText().equals("")){
+                jTextField9.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(jCheckBox10.isSelected()){
+            if(jTextField10.getText().equals("")){
+                jTextField10.setBorder(BorderFactory.createLineBorder(Color.red));
+                //JOptionPane.showMessageDialog(null,"Description can't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+                count++;
+            }
+        }
+        
+        if(count == 0){    
+            dispose();
+
+            Diagnosis_Page dp = new Diagnosis_Page();
+            dp.setVisible(true);
+        }
+        else{
+            JOptionPane.showMessageDialog(null,"Body Part & Description fields\ncan't be empty!","ERROR",JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jCheckBox1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox1StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox1.isSelected()){
+            jComboBox1.setEnabled(true);
+            jTextField1.setEditable(true);
+            jSlider1.setEnabled(true);
+        }
+        else{
+            jComboBox1.setSelectedItem("None");
+            jComboBox1.setEnabled(false);
+            jComboBox1.setBorder(null);
+            jTextField1.setText("");
+            jTextField1.setEditable(false);
+            jTextField1.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider1.setValue(1);
+            jSlider1.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox1StateChanged
+
+    private void jCheckBox2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox2StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox2.isSelected()){
+            jComboBox2.setEnabled(true);
+            jTextField2.setEditable(true);
+            jSlider2.setEnabled(true);
+        }
+        else{
+            jComboBox2.setSelectedItem("None");
+            jComboBox2.setEnabled(false);
+            jComboBox2.setBorder(null);
+            jTextField2.setText("");
+            jTextField2.setEditable(false);
+            jTextField2.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider2.setValue(1);
+            jSlider2.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox2StateChanged
+
+    private void jCheckBox3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox3StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox3.isSelected()){
+            jComboBox3.setEnabled(true);
+            jTextField3.setEditable(true);
+            jSlider3.setEnabled(true);
+        }
+        else{
+            jComboBox3.setSelectedItem("None");
+            jComboBox3.setEnabled(false);
+            jComboBox3.setBorder(null);
+            jTextField3.setText("");
+            jTextField3.setEditable(false);
+            jTextField3.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider3.setValue(1);
+            jSlider3.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox3StateChanged
+
+    private void jCheckBox4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox4StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox4.isSelected()){
+            jComboBox4.setEnabled(true);
+            jTextField4.setEditable(true);
+            jSlider4.setEnabled(true);
+        }
+        else{
+            jComboBox4.setSelectedItem("None");
+            jComboBox4.setEnabled(false);
+            jComboBox4.setBorder(null);
+            jTextField4.setText("");
+            jTextField4.setEditable(false);
+            jTextField4.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider4.setValue(1);
+            jSlider4.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox4StateChanged
+
+    private void jCheckBox5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox5StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox5.isSelected()){
+            jComboBox5.setEnabled(true);
+            jTextField5.setEditable(true);
+            jSlider5.setEnabled(true);
+        }
+        else{
+            jComboBox5.setSelectedItem("None");
+            jComboBox5.setEnabled(false);
+            jComboBox5.setBorder(null);
+            jTextField5.setText("");
+            jTextField5.setEditable(false);
+            jTextField5.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider5.setValue(1);
+            jSlider5.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox5StateChanged
+
+    private void jCheckBox6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox6StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox6.isSelected()){
+            jTextField6.setEditable(true);
+            jSlider6.setEnabled(true);
+        }
+        else{
+            jTextField6.setText("");
+            jTextField6.setEditable(false);
+            jTextField6.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider6.setValue(1);
+            jSlider6.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox6StateChanged
+
+    private void jCheckBox7StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox7StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox7.isSelected()){
+            jTextField7.setEditable(true);
+            jSlider7.setEnabled(true);
+        }
+        else{
+            jTextField7.setText("");
+            jTextField7.setEditable(false);
+            jTextField7.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider7.setValue(1);
+            jSlider7.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox7StateChanged
+
+    private void jCheckBox8StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox8StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox8.isSelected()){
+            jTextField8.setEditable(true);
+            jSlider8.setEnabled(true);
+        }
+        else{
+            jTextField8.setText("");
+            jTextField8.setEditable(false);
+            jTextField8.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider8.setValue(1);
+            jSlider8.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox8StateChanged
+
+    private void jCheckBox9StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox9StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox9.isSelected()){
+            jTextField9.setEditable(true);
+            jSlider9.setEnabled(true);
+        }
+        else{
+            jTextField9.setText("");
+            jTextField9.setEditable(false);
+            jTextField9.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider9.setValue(1);
+            jSlider9.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox9StateChanged
+
+    private void jCheckBox10StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jCheckBox10StateChanged
+        // TODO add your handling code here:
+        
+        if(jCheckBox10.isSelected()){
+            jTextField10.setEditable(true);
+            jSlider10.setEnabled(true);
+        }
+        else{
+            jTextField10.setText("");
+            jTextField10.setEditable(false);
+            jTextField10.setBorder(BorderFactory.createLineBorder(Color.black));
+            jSlider10.setValue(1);
+            jSlider10.setEnabled(false);
+        }
+    }//GEN-LAST:event_jCheckBox10StateChanged
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+        jCheckBox1.setSelected(false);
+        jCheckBox2.setSelected(false);
+        jCheckBox3.setSelected(false);
+        jCheckBox4.setSelected(false);
+        jCheckBox5.setSelected(false);
+        jCheckBox6.setSelected(false);
+        jCheckBox7.setSelected(false);
+        jCheckBox8.setSelected(false);
+        jCheckBox9.setSelected(false);
+        jCheckBox10.setSelected(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jComboBox1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jComboBox1FocusGained
+        // TODO add your handling code here:
+        jComboBox1.setBorder(null);
+    }//GEN-LAST:event_jComboBox1FocusGained
+
+    private void jComboBox2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jComboBox2FocusGained
+        // TODO add your handling code here:
+        jComboBox2.setBorder(null);
+    }//GEN-LAST:event_jComboBox2FocusGained
+
+    private void jComboBox3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jComboBox3FocusGained
+        // TODO add your handling code here:
+        jComboBox3.setBorder(null);
+    }//GEN-LAST:event_jComboBox3FocusGained
+
+    private void jComboBox4FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jComboBox4FocusGained
+        // TODO add your handling code here:
+        jComboBox4.setBorder(null);
+    }//GEN-LAST:event_jComboBox4FocusGained
+
+    private void jComboBox5FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jComboBox5FocusGained
+        // TODO add your handling code here:
+        jComboBox5.setBorder(null);
+    }//GEN-LAST:event_jComboBox5FocusGained
+
+    private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
+        // TODO add your handling code here:
+        jTextField1.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField1FocusGained
+
+    private void jTextField2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusGained
+        // TODO add your handling code here:
+        jTextField2.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField2FocusGained
+
+    private void jTextField3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField3FocusGained
+        // TODO add your handling code here:
+        jTextField3.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField3FocusGained
+
+    private void jTextField4FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField4FocusGained
+        // TODO add your handling code here:
+        jTextField4.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField4FocusGained
+
+    private void jTextField5FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField5FocusGained
+        // TODO add your handling code here:
+        jTextField5.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField5FocusGained
+
+    private void jTextField6FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField6FocusGained
+        // TODO add your handling code here:
+        jTextField6.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField6FocusGained
+
+    private void jTextField7FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField7FocusGained
+        // TODO add your handling code here:
+        jTextField7.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField7FocusGained
+
+    private void jTextField8FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField8FocusGained
+        // TODO add your handling code here:
+        jTextField8.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField8FocusGained
+
+    private void jTextField9FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField9FocusGained
+        // TODO add your handling code here:
+        jTextField9.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField9FocusGained
+
+    private void jTextField10FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField10FocusGained
+        // TODO add your handling code here:
+        jTextField10.setBorder(BorderFactory.createLineBorder(Color.black));
+    }//GEN-LAST:event_jTextField10FocusGained
 
     /**
      * @param args the command line arguments
@@ -199,13 +1088,55 @@ public class Symptoms_Page extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox7;
+    private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox jComboBox2;
+    private javax.swing.JComboBox jComboBox3;
+    private javax.swing.JComboBox jComboBox4;
+    private javax.swing.JComboBox jComboBox5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSlider jSlider1;
+    private javax.swing.JSlider jSlider10;
+    private javax.swing.JSlider jSlider2;
+    private javax.swing.JSlider jSlider3;
+    private javax.swing.JSlider jSlider4;
+    private javax.swing.JSlider jSlider5;
+    private javax.swing.JSlider jSlider6;
+    private javax.swing.JSlider jSlider7;
+    private javax.swing.JSlider jSlider8;
+    private javax.swing.JSlider jSlider9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }
